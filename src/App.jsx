@@ -44,7 +44,7 @@ function App() {
   return (
     <>
       <div style={{ backgroundImage: `url(${bgImg})` }} 
-      className='flex flex-col justify-between items-center min-h-screen w-full bg-repeat bg-auto'>
+      className='flex flex-col justify-between items-center min-h-screen w-full bg-repeat bg-auto gap-3'>
         <header className='flex items-center bg-black bg-opacity-80 w-screen ring p-5 '>
           <div className="logo text-4xl font-bold mr-auto hover:hover:text-indigo-500" ><a href="">Movie Wizard</a></div>
           <nav>
