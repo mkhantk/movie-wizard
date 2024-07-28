@@ -1,0 +1,7 @@
+* {
+  @apply text-white z-10
+}
+
+.ring-glist {
+  @apply ring ring-red-600
+}
