@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { useState, useEffect, useMemo } from 'react';
+import loading from './assets/loading-svgrepo-com.svg'
 
 const genreMap = {
     "Action": 28,
@@ -26,7 +27,14 @@ const genreMap = {
 function Result ({genre, switchToHome}) {
     const [title, setTitle] = useState('')
     const [poster, setPoster] = useState('')
-    const [overview, setOverview] = useState('Loading...')
+    const [overview, setOverview] = useState(() => {
+        return (
+            <div className='w-5 h-5 ml-16 flex gap-3 items-center' >
+                <img src={loading} alt="loading" className='animate-spin'/>
+                Loading...   
+            </div>
+        )
+    })
     const [resultData, setResultData] = useState()
     const [currentIndex, setCurrentIndex] = useState(0);
     const [currentPage, setCurrentPage] = useState(1)

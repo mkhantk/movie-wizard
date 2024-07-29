@@ -7,6 +7,7 @@ import Home from './intro'
 import Genre from './genre'
 import Result from './result'
 
+
 function App() {
   // const [count, setCount] = useState(0)
   const [currentComponent, setCurrentComponent] = useState('Home')
